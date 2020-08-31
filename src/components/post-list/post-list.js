@@ -14,7 +14,9 @@ const PostList = ({posts}) => {
                   <PostListItem {...itemProps}/>  
                 </li>
             )
-        } 
+        } else {
+            return null;
+        }
     })
 
     return (
