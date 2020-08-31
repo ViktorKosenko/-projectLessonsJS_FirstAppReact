@@ -6,8 +6,8 @@ export default class PostListItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            important: false,
-            like: false
+            important: this.props.important,
+            like: this.props.like
         }
         // this.onImportant = this.onImportant.bind(this);
     }
@@ -36,6 +36,7 @@ export default class PostListItem extends Component {
         if (important) {
             classNames += ' important'
         }
+        
         if (like) {
             classNames += ' like'
         }
