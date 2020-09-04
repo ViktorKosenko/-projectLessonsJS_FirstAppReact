@@ -1,3 +1,6 @@
 {
-    "compile-hero.disable-compile-files-on-did-save-code": true
+    "eslint.alwaysShowStatus": true,
+    "eslint.debug": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true
 }
