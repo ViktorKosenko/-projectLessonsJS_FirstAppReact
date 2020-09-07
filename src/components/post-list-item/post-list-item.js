@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './post-list-item.sass';
+import './post-list-item.css';
 
 const PostListItem = ({ label, onDelete, onToggleImportant, important, like, onToggleLiked }) => { 
         let classNames = 'app-list-item d-flex justify-content-between';
@@ -16,7 +16,7 @@ const PostListItem = ({ label, onDelete, onToggleImportant, important, like, onT
         return (
             <div className={classNames}>
                 <span
-                    className="app-list-item-label"
+                    // className="app-list-item-label"
                     onClick={onToggleLiked}>
                     {label}
                 </span>
